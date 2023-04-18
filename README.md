@@ -1,4 +1,4 @@
-# Laboratorio-Ts2
+# Laboratorio--Ts2
 
 El ejercicio consiste en mostrar información de grupos de música por consola.
 

@@ -1,16 +1,12 @@
 import './style.css';
 
-// si quiero poner un nombre largo a un
-// interface como se escribiria? MusicalGroup?
-interface Music {
+interface MusicGroup {
   name: string;
   year: number;
   active: boolean;
   genre: string;
 }
 
-// Hasta que punto si no se repite es mejor
-// o peor crear constantes con información?
 const popRock = '🎵 Pop Rock';
 const rock = '🎸 Rock';
 const hardRock = '🤘 Hard Rock';
@@ -19,35 +15,35 @@ const classical = ' 🎼 Clásica';
 const titleStyle =
   'background-color: lightgreen; font-size:20px; font-weight: bold';
 
-const groupA: Music = {
+const groupA: MusicGroup = {
   name: 'The Beatles',
   year: 1960,
   active: false,
   genre: popRock
 };
 
-const groupB: Music = {
+const groupB: MusicGroup = {
   name: 'Queen',
   year: 1970,
   active: false,
   genre: rock
 };
 
-const groupC: Music = {
+const groupC: MusicGroup = {
   name: 'AC DC',
   year: 1973,
   active: true,
   genre: hardRock
 };
 
-const groupD: Music = {
+const groupD: MusicGroup = {
   name: 'Ludwig van Beethoven',
   year: 1770,
   active: false,
   genre: classical
 };
 
-const groupE: Music = {
+const groupE: MusicGroup = {
   name: 'The Rolling Stones',
   year: 1962,
   active: true,

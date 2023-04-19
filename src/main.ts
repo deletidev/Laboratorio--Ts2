@@ -7,11 +7,6 @@ interface MusicGroup {
   genre: string;
 }
 
-const popRock = '🎵 Pop Rock';
-const rock = '🎸 Rock';
-const hardRock = '🤘 Hard Rock';
-const classical = ' 🎼 Clásica';
-
 const titleStyle =
   'background-color: lightgreen; font-size:20px; font-weight: bold';
 
@@ -19,40 +14,37 @@ const groupA: MusicGroup = {
   name: 'The Beatles',
   year: 1960,
   active: false,
-  genre: popRock
+  genre: '🎵 Pop Rock'
 };
 
 const groupB: MusicGroup = {
   name: 'Queen',
   year: 1970,
   active: false,
-  genre: rock
+  genre: '🎸 Rock'
 };
 
 const groupC: MusicGroup = {
   name: 'AC DC',
   year: 1973,
   active: true,
-  genre: hardRock
+  genre: '🤘 Hard Rock'
 };
 
 const groupD: MusicGroup = {
   name: 'Ludwig van Beethoven',
   year: 1770,
   active: false,
-  genre: classical
+  genre: ' 🎼 Clásica'
 };
 
 const groupE: MusicGroup = {
   name: 'The Rolling Stones',
   year: 1962,
   active: true,
-  genre: rock
+  genre: '🎸 Rock'
 };
 
-/*Si tengo que mostrar en consola activo o no activo,
- pero el valor es un booleano, 
- necesito pasarlo por un condicional no?*/
 console.log(`%c${groupA.name}`, titleStyle);
 console.log(`El grupo se fundó en ${groupA.year}`);
 console.log(`Están activos: ${groupA.active}`);
